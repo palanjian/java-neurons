@@ -1,4 +1,4 @@
-package org.example;
+package main;
 import java.util.Scanner;
 
 public class Main {
@@ -21,7 +21,7 @@ public class Main {
 
             int expected = Integer.parseInt(inputString[numberOfInputs]);
 
-            perceptron.train(inputs, expected);
+            perceptron.train(new Vector(inputs), expected);
         }
     }
 }
